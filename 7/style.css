@@ -27,9 +27,12 @@ nav {
   top: 0;
   z-index: 1;
 
-  .right-logo img {
-    height: 22px;
-  }
+.right-logo img {
+  height: 28px;          /* perfect Cursor size */
+  width: auto;           /* keep aspect ratio */
+  display: block;        /* remove inline gap */
+  object-fit: contain;   /* safe for SVG/PNG */
+}
   .mid-links a {
     text-decoration: none;
     color: var(--white-pri);
@@ -405,7 +408,7 @@ main {
 
 .footer {
   padding: 80px 0 40px;
-  background: #14120b;
+  background: #1B1913;
 }
 
 .footer-grid {
